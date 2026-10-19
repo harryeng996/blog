@@ -14,7 +14,7 @@ A short introduction to the problem and why it matters. This paragraph is shown 
 
 ## Subsection
 
-{{</* figure src="architecture.png" caption="Overview of the system architecture. (Image source: my own)" align="center" */>}}
+{{"{{<"}} figure src="architecture.png" caption="Overview of the system architecture. (Image source: my own)" align="center" {{">}}"}}
 
 # Approach
 
@@ -24,7 +24,7 @@ A short introduction to the problem and why it matters. This paragraph is shown 
 
 # Citation
 
-{{</* citation */>}}
+{{"{{<"}} citation {{">}}"}}
 
 # References
 
