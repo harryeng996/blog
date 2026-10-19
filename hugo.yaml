@@ -1,0 +1,74 @@
+baseURL: "https://harryeng996.github.io/"
+locale: "en-US"
+defaultContentLanguage: "en"
+title: "harry's log"
+theme: "PaperMod"
+
+enableRobotsTXT: true
+enableEmoji: true
+buildDrafts: false
+buildFuture: false
+minify:
+  minifyOutput: true
+pagination:
+  pagerSize: 10
+
+params:
+  env: production
+  description: "learning and write"
+  author: "harry"
+  DateFormat: "January 2, 2006"
+  defaultTheme: auto
+  mainSections: ["posts"]
+
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowCodeCopyButtons: true
+  ShowRssButtonInSectionTermList: true
+  ShowBreadCrumbs: false
+  ShowToc: true
+  TocOpen: true
+  comments: false
+
+  # Used by the citation shortcode (Step 6)
+  citationName: "harry"
+  citationKey: "harry"
+
+  homeInfoParams:
+    Title: "👋 Welcome to harry's log"
+    Content: >
+      Hi, I’m harry, a swe sharing notes on software engineering, mindset and some hobbies.
+      This is my space for learning, thinking, and writing things down.
+
+  socialIcons:
+    - { name: github,   url: "https://github.com/tenban" }
+    - { name: linkedin, url: "https://linkedin.com/in/tenban" }
+    - { name: rss,      url: "index.xml" }
+
+taxonomies:
+  tag: tags
+
+outputs:
+  home: ["HTML", "RSS", "JSON"]
+
+markup:
+  highlight:
+    noClasses: false
+  goldmark:
+    renderer:
+      unsafe: true
+    extensions:
+      passthrough:          # keep $...$ intact for KaTeX (Step 5)
+        enable: true
+        delimiters:
+          block:  [['\[', '\]'], ['$$', '$$']]
+          inline: [['\(', '\)'], ['$', '$']]
+
+menu:
+  main:
+    - { identifier: posts,    name: "Posts",   url: "/",          weight: 1 }
+    - { identifier: archives, name: "Archive", url: "/archives/", weight: 2 }
+    - { identifier: search,   name: "Search",  url: "/search/",   weight: 3 }
+    - { identifier: tags,     name: "Tags",    url: "/tags/",     weight: 4 }
+    - { identifier: faq,      name: "FAQ",     url: "/faq/",      weight: 5 }

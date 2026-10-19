@@ -1,0 +1,10 @@
+{{- $p := .Page -}}
+{{- $name := site.Params.citationName -}}
+{{- $key := printf "%s%s%s" site.Params.citationKey ($p.Date.Format "2006") (.Get "key" | default "") -}}
+<p>Cited as:</p>
+<blockquote>
+  <p>{{ $name }}. ({{ $p.Date.Format "Jan 2006" }}). “{{ $p.Title }}”. {{ site.Title }}. {{ $p.Permalink }}.</p>
+</blockquote>
+<p>Or</p>
+{{- $bib := printf "@article{%s,\n  title   = \"%s\",\n  author  = \"%s\",\n  journal = \"%s\",\n  year    = \"%s\",\n  month   = \"%s\",\n  url     = \"%s\"\n}" $key $p.Title $name (strings.TrimSuffix "/" (strings.TrimPrefix "https://" site.BaseURL)) ($p.Date.Format "2006") ($p.Date.Format "Jan") $p.Permalink -}}
+{{ highlight $bib "bibtex" "" }}
