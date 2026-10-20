@@ -26,6 +26,8 @@ I have two habits that are arguably my worst: laziness and procrastination.
 
 {{< figure src="pursuit-of-happyness.png" caption="Fig. 1. A quote from *The Pursuit of Happyness*. (Image source: *The Pursuit of Happyness*, 2006)" align="center" >}}
 
+> You realize you haven't done anything at all. You're stuck in a loop of "hundreds of goals - half-hearted action - forgetting", which then gradually shrinks until you only set goals and think about them in your head. Only when things have become too serious or almost beyond saving do you finally feel regret, so what's the point of regretting 😂
+
 # Causes
 
 > *Self-awareness matters most, but the environment is what nurtures a person.*
