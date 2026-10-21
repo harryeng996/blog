@@ -6,13 +6,13 @@ ShowShareButtons: false
 ---
 
 **What is this blog about?**
-Learning notes on backend systems, Python, React, and building applications with LLMs.
+I write about whatever I want, mostly software engineering, learning, mindset, and perspectives.
 
 **Who are you?**
-I'm a backend engineer with a background in Java/Spring, currently expanding into Python, React, and AI engineering.
+I'm a swe with a background in backend (Spring), with hands-on full-stack experience (React). Currently growing into Python-based AI engineering: LLM integration, RAG, and AI-powered backend systems.
 
 **How can I reach you?**
 Feel free to reach out via GitHub or LinkedIn (links on the home page).
 
-**Can I cite or share your posts?**
-Yes. Each post includes a citation block at the end.
+<!-- **Can I cite or share your posts?**
+Yes. Each post includes a citation block at the end. -->
